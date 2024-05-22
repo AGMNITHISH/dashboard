@@ -10,9 +10,10 @@ interface reactChilLayout {
 const Layout: React.FC<reactChilLayout> = ({ children }) => {
   return (
     <div className="flex min-h-screen">
-      <div className="w-48 p-4">
+      <div className="hidden md:block md:w-52 p-4">
         <Sidebar />
       </div>
+
       <div className="bg-neutral-600 flex-1">
         <Header />
         <div className="min-h-screen">{children}</div>

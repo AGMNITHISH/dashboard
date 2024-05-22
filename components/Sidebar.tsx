@@ -1,27 +1,11 @@
 import React from "react";
-import { RiDashboardHorizontalFill } from "react-icons/ri";
-import { BiTable } from "react-icons/bi";
-import { TbMapSearch } from "react-icons/tb";
-import { SiSoundcharts, SiReacthookform } from "react-icons/si";
-import { FaFingerprint } from "react-icons/fa6";
+import navList from "@/config/navConfig";
 
 const Sidebar: React.FC = () => {
-  const navList = {
-    ADMIN_LAYOUT_PAGES: [
-      { name: "DASHBOARD", icon: <RiDashboardHorizontalFill /> },
-      { name: "TABLES", icon: <BiTable /> },
-      { name: "MAPS", icon: <TbMapSearch /> },
-      { name: "CHARTS", icon: <SiSoundcharts /> },
-    ],
-    AUTH_LAYOUT_PAGES: [
-      { name: "LOGIN", icon: <FaFingerprint /> },
-      { name: "REGISTER", icon: <SiReacthookform /> },
-    ],
-  };
   return (
     <>
-      <div className="py-4">NOTUS NEXTJS</div>
-      <div className="border-b border-slate-400"></div>
+      <div className="hidden md:block py-4">NOTUS NEXTJS</div>
+      <div className="hidden md:block border-b border-slate-200"></div>
       <div className="py-2 text-xs font-semibold tracking-wider">
         ADMIN LAYOUT PAGES
       </div>
@@ -30,7 +14,7 @@ const Sidebar: React.FC = () => {
           {navList.ADMIN_LAYOUT_PAGES.map((item, ind) => {
             return (
               <li key={ind}>
-                <div className="p-3 flex items-center text-gray-700 ">
+                <div className="p-3 flex items-center text-gray-800 nav-hover">
                   <span className="px-2 text-xl"> {item.icon}</span>
                   <span className="text-xs font-semibold tracking-widest">
                     {item.name}
@@ -41,7 +25,7 @@ const Sidebar: React.FC = () => {
           })}
         </ul>
       </div>
-      <div className="border-b border-slate-400 py-4"></div>
+      <div className="border-b border-slate-200 py-4"></div>
       <div className="py-4 text-xs font-semibold tracking-wider">
         AUTH LAYOUT PAGES
       </div>
@@ -51,7 +35,7 @@ const Sidebar: React.FC = () => {
           {navList.AUTH_LAYOUT_PAGES.map((item, ind) => {
             return (
               <li key={ind}>
-                <div className="p-3 flex items-center text-gray-700 ">
+                <div className="p-3 flex items-center text-gray-800 nav-hover">
                   <span className="px-2 text-xl"> {item.icon}</span>
                   <span className="text-xs font-semibold tracking-widest">
                     {item.name}
