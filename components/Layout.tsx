@@ -14,7 +14,7 @@ const Layout: React.FC<reactChilLayout> = ({ children }) => {
         <Sidebar />
       </div>
 
-      <div className="bg-neutral-600 flex-1">
+      <div className="bg-gray-300 flex-1">
         <Header />
         <div className="min-h-screen">{children}</div>
         <Footer />

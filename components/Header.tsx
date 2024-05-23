@@ -25,7 +25,7 @@ const Header: React.FC = () => {
               <div>NOTUS NEXTJS</div>
               <div>
                 <CgClose
-                  className="text-xl cursor-pointer"
+                  className="text-xl cursor-pointer "
                   onClick={() => setSidebarCollapse(!sidebarCollapse)}
                 />
               </div>
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
         <div className="block md:hidden">
           {sidebarCollapse && (
             <HiMenuAlt1
-              className="text-2xl cursor-pointer hover:text-black"
+              className="text-2xl cursor-pointer text-white hover:text-gray-400"
               onClick={() => setSidebarCollapse(!sidebarCollapse)}
             />
           )}
