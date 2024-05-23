@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <div className="flex items-center h-16 px-6 bg-slate-300">
+    <div className="flex items-center h-16 px-6 bg-gray-800">
       {/* small device header start */}
 
       {!sidebarCollapse && (
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
             />
           )}
         </div>
-        <div className="hidden md:block">Dashboard</div>
+        <div className="hidden md:block text-white">Dashboard</div>
         <div>
           <InputWithIcon
             name="nav-search"
@@ -67,11 +67,11 @@ const Header: React.FC = () => {
               alt="Picture of the author"
               className="rounded-full"
             />
-            <div className="flex flex-col">
-              <span className="hidden xl:block text-black font-semibold">
+            <div className="flex flex-col text-white px-2">
+              <span className="hidden xl:block font-semibold">
                 Tom Hiddleston
               </span>
-              <span className="hidden xl:block text-xs text-black">
+              <span className="hidden xl:block text-xs">
                 Senior software engineer
               </span>
             </div>
