@@ -20,6 +20,7 @@ const Widjet: React.FC<MetricsListProps> = () => {
             lastUpdated={item.lastUpdated}
             status={item.status}
             icon={item.icon}
+            iconClassName={item.iconClassName}
           />
         );
       })}

@@ -11,8 +11,9 @@ export interface inputwithIcon {
 export interface metricsCard {
   name: string;
   value: number;
-  icon: string;
+  icon: any;
   percenatageValue: number;
   lastUpdated: string;
   status: string;
+  iconClassName: string;
 }

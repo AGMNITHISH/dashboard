@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "config/navConfig.js",
-    "config/widjetConfig.ts"
+    "config/widjetConfig.js"
   ],
   "exclude": [
     "node_modules"

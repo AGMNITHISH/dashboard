@@ -1,6 +1,7 @@
 import { metricsCard } from "@/libs/appInterface";
 import React from "react";
 import { numberFormat, perdentageFormat } from "./valueFormat";
+import widjetConfig from "@/config/widjetConfig";
 
 const MetricsCard: React.FC<metricsCard> = ({
   name,
@@ -9,6 +10,7 @@ const MetricsCard: React.FC<metricsCard> = ({
   percenatageValue,
   lastUpdated,
   status,
+  iconClassName,
 }) => {
   return (
     <div className="bg-white h-26 p-4  rounded-md">
@@ -19,12 +21,12 @@ const MetricsCard: React.FC<metricsCard> = ({
             {numberFormat(value)}
           </div>
         </div>
-        <div className="border w-12  h-12 bg-slate-500 rounded-full">
+        <div className={`border w-12  h-12 ${iconClassName} rounded-full`}>
           {icon}
         </div>
       </div>
-      <div>
-        <span>{perdentageFormat(percenatageValue)}</span>
+      <div className="flex items-center">
+        <span>{widjetConfig(status, perdentageFormat(percenatageValue))}</span>
         <span className="px-2 text-sm text-gray-500">{lastUpdated}</span>
       </div>
     </div>
