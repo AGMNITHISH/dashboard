@@ -1,10 +1,13 @@
-import type { BsBarChartFill } from "react-icons/bs";
+import { IoStatsChart } from "react-icons/io5";
+import { AiFillPieChart } from "react-icons/ai";
+import { MdGroups } from "react-icons/md";
+import { VscPercentage } from "react-icons/vsc";
 
 export const metricsCardData = [
   {
     name: "TRAFFIC",
     value: 350897,
-    icon: "",
+    icon: IoStatsChart,
     percenatageValue: 3.48,
     lastUpdated: "Since last month",
     status: "UP",
@@ -13,7 +16,7 @@ export const metricsCardData = [
   {
     name: "NEW USERS",
     value: 2356,
-    icon: "",
+    icon: AiFillPieChart,
     percenatageValue: 3.48,
     lastUpdated: "Since last week",
     status: "DOWN",
@@ -22,7 +25,7 @@ export const metricsCardData = [
   {
     name: "SALES",
     value: 924,
-    icon: "",
+    icon: MdGroups,
     percenatageValue: 1.1,
     lastUpdated: "Since yesterday",
     status: "NEUTRAL",
@@ -31,7 +34,7 @@ export const metricsCardData = [
   {
     name: "PERFORMANCE",
     value: 4965,
-    icon: "",
+    icon: VscPercentage,
     percenatageValue: 12,
     lastUpdated: "Since last month",
     status: "UP",
