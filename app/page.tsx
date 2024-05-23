@@ -1,4 +1,4 @@
-import Widjet from "@/components/Widjet";
+import Widjet from "@/components/modules/Widjet";
 import React from "react";
 
 const Home = () => {

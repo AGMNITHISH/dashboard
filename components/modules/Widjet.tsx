@@ -1,5 +1,5 @@
 import React from "react";
-import MetricsCard from "../libs/MetricsCard";
+import MetricsCard from "../../libs/MetricsCard";
 import { metricsCardData } from "@/staticData/metricCardData";
 import { metricsCard } from "@/libs/appInterface";
 
