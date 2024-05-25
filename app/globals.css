@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-.nav-hover {
-  @apply hover:text-gray-500 hover:cursor-pointer;
+@layer components {
+  .nav-hover {
+    @apply hover:text-gray-500 hover:cursor-pointer;
+  }
 }
+
 .h-500 {
   height: 31.25rem;
-}
-.top-70- {
-  top: -5.5rem;
 }
