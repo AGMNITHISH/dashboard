@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import navList from "@/config/navConfig";
 
 const Sidebar: React.FC = () => {
@@ -17,7 +18,7 @@ const Sidebar: React.FC = () => {
                 <div className="p-3 flex items-center text-gray-800 nav-hover">
                   <span className="px-2 text-xl"> {item.icon}</span>
                   <span className="text-xs font-semibold tracking-widest">
-                    {item.name}
+                    <Link href={item.path}>{item.name}</Link>
                   </span>
                 </div>
               </li>
