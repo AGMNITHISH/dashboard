@@ -6,14 +6,14 @@ import { TbMapSearch } from "react-icons/tb";
 
 const navList = {
   ADMIN_LAYOUT_PAGES: [
-    { name: "DASHBOARD", icon: <RiDashboardHorizontalFill /> },
-    { name: "TABLES", icon: <BiTable /> },
-    { name: "MAPS", icon: <TbMapSearch /> },
-    { name: "CHARTS", icon: <SiSoundcharts /> },
+    { name: "DASHBOARD", path: "/", icon: <RiDashboardHorizontalFill /> },
+    { name: "REPORT", path: "/report", icon: <BiTable /> },
+    { name: "MAPS", path: "/maps", icon: <TbMapSearch /> },
+    { name: "CHARTS", path: "/charts", icon: <SiSoundcharts /> },
   ],
   AUTH_LAYOUT_PAGES: [
-    { name: "LOGIN", icon: <FaFingerprint /> },
-    { name: "REGISTER", icon: <SiReacthookform /> },
+    { name: "LOGIN", path: "/login", icon: <FaFingerprint /> },
+    { name: "REGISTER", path: "/register", icon: <SiReacthookform /> },
   ],
 };
 export default navList;
